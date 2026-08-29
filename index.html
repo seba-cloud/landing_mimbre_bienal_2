@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Endémica Crea — Hagamos que Chile teja el mundo</title>
+<meta name="description" content="Sé parte de la llegada del saber hacer artesanal chileno a Francia. Angel Guajardo y la obra colectiva Inteligencia Artesanal fueron seleccionadas para Révélations 2027, la bienal internacional de artesanía del Grand Palais de París." />
+<meta name="theme-color" content="#1c2122" />
+
+<meta property="og:title" content="Endémica Crea — Hagamos que Chile teja el mundo" />
+<meta property="og:description" content="Sé parte de la llegada del saber hacer artesanal chileno a Francia." />
+<meta property="og:type" content="website" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/style.css" />
+
+<!--
+  ========================================================================
+  META PIXEL — reemplazar PIXEL_ID_AQUI por el ID real y descomentar antes
+  de publicar. Trackea PageView automáticamente. El evento MecenasClick
+  (custom) e InitiateCheckout se disparan desde js/main.js al hacer click
+  en cualquier botón de Mercado Pago, si fbq está definido.
+  ========================================================================
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', 'PIXEL_ID_AQUI');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=PIXEL_ID_AQUI&ev=PageView&noscript=1"
+  /></noscript>
+  -->
+</head>
+<body>
+
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container">
+    <a href="#hero" class="wordmark">Endémica Crea</a>
+
+    <nav class="site-nav" data-site-nav>
+      <ul>
+        <li><a href="#historia">La historia</a></li>
+        <li><a href="#oficio">El oficio</a></li>
+        <li><a href="#trayectoria">Trayectoria</a></li>
+        <li><a href="#mecenazgo">Sé mecenas</a></li>
+      </ul>
+    </nav>
+
+    <button class="nav-toggle" type="button" data-nav-toggle aria-label="Abrir menú" aria-expanded="false">&#9776;</button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ 1. HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__media">
+      <!-- Pendiente: reemplazar por video/foto definitiva del hero cuando se comparta por Drive -->
+      <img src="assets/img/hero/poster.jpg" alt="Angel Guajardo tejiendo mimbre en su taller" />
+    </div>
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content">
+      <div class="container">
+        <p class="eyebrow hero__eyebrow">Révélations 2027 · Grand Palais, París</p>
+        <h1 class="hero__title">Hagamos que Chile teja el mundo</h1>
+        <p class="hero__subtitle">Sé parte de la llegada del saber hacer artesanal chileno a Francia.</p>
+        <p class="hero__lead">Angel Guajardo y la obra colectiva <em>Inteligencia Artesanal</em> fueron seleccionadas para representar el oficio del mimbre chileno en la bienal de artesanía más importante del mundo.</p>
+
+        <div class="hero__actions">
+          <a class="btn btn-outline-light" href="#mecenazgo">Quiero ser mecenas</a>
+          <button type="button" class="btn-text-light" data-share-page>o comparte esta página con alguien que debería conocer esta historia</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BARRA DE PROGRESO ============ -->
+  <section class="progress" aria-label="Progreso de la campaña">
+    <div class="container progress__inner">
+      <div class="progress__info">
+        <p class="progress__amounts">
+          <span id="amount-raised">$[monto]</span> recaudados de <span id="amount-goal">$[monto]</span>
+          · <span id="days-left">[X]</span> días restantes
+        </p>
+        <p class="progress__percent"><span id="progress-percent">[X]</span>% de la meta</p>
+      </div>
+      <div class="progress__action">
+        <div class="progress__track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress-bar">
+          <div class="progress__fill" id="progress-fill"></div>
+        </div>
+        <a class="btn btn-outline-dark btn--small" href="#mecenazgo">Quiero ser mecenas</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. ABOUT — "Mimbre en arte" ============ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-layout">
+        <div class="about-layout__text">
+          <p class="eyebrow">El proyecto</p>
+          <h2 class="giant-word">Mimbre<br />en arte</h2>
+          <div class="prose">
+            <p><span class="name-mark">Angel Guajardo</span> y la obra colectiva <em>Inteligencia Artesanal</em> fueron seleccionadas para representar el oficio del mimbre chileno en la bienal de artesanía más importante del mundo.</p>
+            <p>Un proyecto de interacción de oficios, unidos por el mimbre.</p>
+          </div>
+        </div>
+        <div class="about-layout__image">
+          <img src="assets/img/obra/contrapunto.jpg" alt="Contrapunto — sillón dual tejido en mimbre natural y algodón, obra de la colección Inteligencia Artesanal" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3. MANIFIESTO — fondo carbón ============ -->
+  <section class="section manifesto" id="manifiesto">
+    <div class="container">
+      <div class="manifesto-layout">
+        <div class="manifesto-layout__text">
+          <p class="eyebrow eyebrow--on-dark">Esto es mucho más que un viaje</p>
+          <div class="prose">
+            <p>Es la oportunidad de llevar quince años de investigación, oficio y tradición a uno de los escenarios más importantes del mundo para la artesanía contemporánea.</p>
+            <p><span class="name-mark name-mark--on-dark">Angel Guajardo</span> es socióloga y cultora de la artesanía en mimbre hace 15 años. La obra colectiva <em>Inteligencia Artesanal</em> —resultado del proyecto FONDART <em>Entrelazando oficios: Creación artístico artesanal de interacción de oficios y materiales unidos por el mimbre</em>— fue seleccionada para exhibirse en <span class="name-mark name-mark--on-dark">Révélations 2027</span>, la bienal internacional de oficios de arte del Grand Palais de París.</p>
+            <p>Lo que estás haciendo posible no es un viaje. Es la oportunidad de que un patrimonio vivo —el saber-hacer de generaciones de artesanos chilenos— se proyecte, se venda y se reconozca a nivel internacional.</p>
+          </div>
+        </div>
+        <div class="manifesto-layout__quote">
+          <blockquote class="quote">
+            Lo que más me sorprendió cuando empecé a tejer fue la facilidad con que mis manos parecían saber qué hacer. Era como si ese saber hubiera pasado de mi papá a mí de alguna manera invisible, como si lo hubiera aprendido mucho antes de empezar.
+            <span class="quote__cite">— Angel Guajardo</span>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4. LA HISTORIA ============ -->
+  <section class="section" id="historia">
+    <div class="container">
+      <div class="split">
+        <div class="split__media">
+          <img src="assets/img/angel/angel-portrait.jpg" alt="Retrato de Angel Guajardo tejiendo mimbre en su taller" loading="lazy" />
+        </div>
+        <div class="split__text">
+          <p class="eyebrow">La historia</p>
+          <h2 class="section__title">Cómo una socióloga terminó tejiendo mimbre</h2>
+          <div class="prose">
+            <p>Angel creció viendo a su padre, Guillermo Guajardo, transformar varillas en esculturas — casi 80 años de vida, 70 de ellos dedicados al oficio. Pero fue en la universidad, estudiando sociología, donde entendió el verdadero valor de lo que veía en casa: no solo un objeto, sino una memoria que se transmite de generación en generación, y que hoy está en riesgo de desaparecer.</p>
+            <p>Desde entonces, Angel ha dedicado su carrera a unir ambos mundos: investigar el mimbre contemporáneo de Chile con el rigor de la sociología, y practicar el oficio con sus propias manos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. EL OFICIO — galería 4 columnas ============ -->
+  <section class="section section--center" id="oficio">
+    <div class="container">
+      <p class="eyebrow">El oficio</p>
+      <h2 class="section__title">Del canal de agua a la pieza terminada</h2>
+
+      <div class="oficio-grid">
+        <article class="oficio-card">
+          <div class="oficio-card__media">
+            <img src="assets/img/hero/wicker-texture-crop.jpg" alt="Varillas de mimbre chileno" loading="lazy" />
+          </div>
+          <span class="oficio-card__index">01</span>
+          <h3 class="oficio-card__title">Territorio</h3>
+          <p class="oficio-card__text">El mimbre chileno crece especialmente en la zona central del país, desde la Región de Valparaíso hasta la del Ñuble. Chimbarongo, en la región de O'Higgins, es su epicentro productivo. Es más duro que el mimbre europeo — lo que exige más trabajo, pero permite creaciones con características particulares.</p>
+        </article>
+
+        <article class="oficio-card">
+          <div class="oficio-card__media">
+            <img src="assets/img/hero/wicker-texture-full-crop.jpg" alt="Mimbre en cultivo, rama de Salix" loading="lazy" />
+          </div>
+          <span class="oficio-card__index">02</span>
+          <h3 class="oficio-card__title">Cultivo</h3>
+          <p class="oficio-card__text">Es, técnicamente, madera: la rama de un árbol del género <em>Salix</em>. Se poda una vez al año sin talar la planta, y puede incluso ayudar a contener el desborde de canales de riego. Sus desechos se compostan sin dejar rastro.</p>
+        </article>
+
+        <article class="oficio-card">
+          <div class="oficio-card__media">
+            <img src="assets/img/proceso/proceso-1.jpg" alt="Preparación de varillas de mimbre en el taller" loading="lazy" />
+          </div>
+          <span class="oficio-card__index">03</span>
+          <h3 class="oficio-card__title">Preparación</h3>
+          <p class="oficio-card__text">Cada varilla tiene que ser pelada, partida, cepillada y cuadrada antes de estar lista para tejer. Todo el proceso —desde el cultivo hasta la técnica— se transmite de forma oral, de maestro a aprendiz. No existe una escuela para esto.</p>
+        </article>
+
+        <article class="oficio-card">
+          <div class="oficio-card__media">
+            <img src="assets/img/proceso/proceso-2.jpg" alt="Angel Guajardo tejiendo mimbre sobre una estructura" loading="lazy" />
+          </div>
+          <span class="oficio-card__index">04</span>
+          <h3 class="oficio-card__title">Oficio</h3>
+          <p class="oficio-card__text">El resultado es un objeto que puede durar generaciones, en un mundo que compite con el plástico de un solo uso. Cada pieza es, literalmente, tiempo hecho a mano.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6. TRAYECTORIA ============ -->
+  <section class="section" id="trayectoria">
+    <div class="container">
+      <p class="eyebrow">Evidencia y trayectoria</p>
+      <h2 class="section__title">Quince años no se improvisan</h2>
+
+      <ul class="timeline">
+        <li class="timeline__item">
+          <span class="timeline__year">2011</span>
+          <div class="timeline__body">
+            <p><strong>Taller Endémica Crea</strong> (en curso hasta hoy) — desarrollo de creaciones propias en mimbre, aplicando diferentes técnicas y exploraciones para un desarrollo autoral propio. Talleres de artesanía en mimbre para adultos y niñeces.</p>
+          </div>
+        </li>
+        <li class="timeline__item">
+          <span class="timeline__year">2020</span>
+          <div class="timeline__body">
+            <p><strong>FONDART de creación: Producción Artístico-Artesanal en Mimbre</strong> — el trabajo escultórico de Guillermo Guajardo, su padre, y Angel como su aprendiz y ayudante. Resultado: exposición <em>La Casa de los Peces</em>.</p>
+            <a class="timeline__video" href="#video-placeholder" data-video-link="y2020">Enlace video</a>
+          </div>
+        </li>
+        <li class="timeline__item">
+          <span class="timeline__year">2023</span>
+          <div class="timeline__body">
+            <p><strong>FONDART creación: Entretejiendo la tradición y la innovación</strong> — técnicas del tejido textil aplicadas al mimbre. Resultado: exposición <em>Trama y Legado</em>.</p>
+            <a class="timeline__video" href="#video-placeholder" data-video-link="y2023">Enlace video</a>
+          </div>
+        </li>
+        <li class="timeline__item">
+          <span class="timeline__year">2024</span>
+          <div class="timeline__body">
+            <p><strong>FONDART creación: Entrelazando oficios</strong> — creación artístico artesanal de interacción de oficios y materiales unidos por el mimbre; interacción del mimbre con ebanistería, textil, metal y cerámica. Resultado: la obra colectiva <em>Inteligencia Artesanal</em>, la misma que hoy viaja a París.</p>
+            <a class="timeline__video" href="#video-placeholder" data-video-link="y2024">Enlace video</a>
+          </div>
+        </li>
+        <li class="timeline__item">
+          <span class="timeline__year">2026</span>
+          <div class="timeline__body">
+            <p><strong>FONDART de investigación</strong> (en curso) — rescate del saber hacer de la artesanía en mimbre contemporánea en la zona central de Chile, que terminará en un libro.</p>
+          </div>
+        </li>
+      </ul>
+
+      <p class="timeline__note">Además, colaboraciones activas con maestros como Segundo Rodríguez (Chimbarongo) y el artista contemporáneo Pablo García.</p>
+    </div>
+  </section>
+
+  <!-- ============ 7. SÉ PARTE DEL VIAJE — niveles de mecenazgo ============ -->
+  <section class="section" id="mecenazgo">
+    <div class="container">
+      <p class="eyebrow">Sé parte del viaje</p>
+      <h2 class="section__title">Tu aporte ayuda a tejer este proyecto</h2>
+      <div class="prose mecenazgo-intro">
+        <p>Al convertirte en mecenas, te sumas a una iniciativa que busca llevar el saber hacer artesanal chileno a Francia, generar nuevos encuentros y abrir caminos para su proyección internacional.</p>
+        <p>Según el nivel de mecenazgo, recibirás una pieza de mimbre creada especialmente para esta campaña y/o acceso a contenidos exclusivos para tus redes, del proceso, el viaje y la participación en la Biennale Révélations.</p>
+      </div>
+      <p class="mecenazgo-note">Todos los niveles incluyen acceso directo al libro digital en proceso sobre el mimbre contemporáneo en Chile. Montos por confirmar.</p>
+
+      <div class="tier-grid">
+        <article class="tier-card">
+          <span class="tier-card__name">Brote</span>
+          <span class="tier-card__amount">$X</span>
+          <ul class="tier-card__list">
+            <li>Agradecimiento nominal en redes de Endémica Crea</li>
+            <li>Acceso al libro digital en proceso</li>
+          </ul>
+          <a class="btn btn-outline-dark btn--small" href="http://link.mercadopago.cl/endemicacrea" target="_blank" rel="noopener" data-mercadopago>Quiero ser mecenas</a>
+        </article>
+
+        <article class="tier-card">
+          <span class="tier-card__name">Rama</span>
+          <span class="tier-card__amount">$X</span>
+          <ul class="tier-card__list">
+            <li>Todo lo anterior</li>
+            <li>Contenido exclusivo del proceso, tejido paso a paso</li>
+          </ul>
+          <a class="btn btn-outline-dark btn--small" href="http://link.mercadopago.cl/endemicacrea" target="_blank" rel="noopener" data-mercadopago>Quiero ser mecenas</a>
+        </article>
+
+        <article class="tier-card">
+          <span class="tier-card__name">Trama</span>
+          <span class="tier-card__amount">$X</span>
+          <ul class="tier-card__list">
+            <li>Todo lo anterior</li>
+            <li>Pieza de mimbre exclusiva creada para esta campaña</li>
+            <li>Contenido exclusivo del viaje a París</li>
+          </ul>
+          <a class="btn btn-outline-dark btn--small" href="http://link.mercadopago.cl/endemicacrea" target="_blank" rel="noopener" data-mercadopago>Quiero ser mecenas</a>
+        </article>
+
+        <article class="tier-card">
+          <span class="tier-card__name">Raíz</span>
+          <span class="tier-card__amount">$X</span>
+          <ul class="tier-card__list">
+            <li>Todo lo anterior</li>
+            <li>Contenido exclusivo de la participación en Révélations</li>
+            <li>Mención especial como mecenas fundador del proyecto</li>
+          </ul>
+          <a class="btn btn-outline-dark btn--small" href="http://link.mercadopago.cl/endemicacrea" target="_blank" rel="noopener" data-mercadopago>Quiero ser mecenas</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 8. PRESUPUESTO ============ -->
+  <section class="section" id="presupuesto">
+    <div class="container">
+      <p class="eyebrow">El objetivo</p>
+      <h2 class="section__title">Para qué se usará cada peso</h2>
+      <div class="prose">
+        <p>El costo de participar en Révélations no se limita al pasaje. Incluye el stand en la bienal, el traslado de la obra desde Chile hasta París, y la estadía durante los cinco días del evento.</p>
+      </div>
+
+      <table class="budget-table" id="budget-table">
+        <caption class="sr-only">Presupuesto de la campaña</caption>
+        <thead>
+          <tr><th scope="col">Concepto</th><th scope="col">Monto</th></tr>
+        </thead>
+        <tbody id="budget-table-body">
+          <!-- filas generadas por JS desde config/campaign.config.js -->
+        </tbody>
+        <tfoot>
+          <tr class="budget-table__total"><th scope="row">Total</th><td id="budget-total">$[monto]</td></tr>
+        </tfoot>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ 9. FAQ ============ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <p class="eyebrow">Preguntas frecuentes</p>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>¿Por qué fue seleccionada?</summary>
+          <p>Por la trayectoria de investigación y oficio de Angel Guajardo y su aporte a la salvaguardia del saber hacer del oficio en mimbre.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Cómo puedo ser mecenas sin dinero?</summary>
+          <p>Compartiendo esta página, especialmente con personas que sí puedan aportar directamente.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 10. CTA FINAL + COMPARTIR ============ -->
+  <section class="cta-final" id="cta-final">
+    <div class="cta-final__photo" aria-hidden="true">
+      <img src="assets/img/proceso/proceso-2.jpg" alt="" loading="lazy" />
+    </div>
+    <div class="container cta-final__inner">
+      <h2 class="cta-final__title">Ayúdanos a llevar esta historia al mundo</h2>
+      <div class="cta-final__actions">
+        <a class="btn btn-outline-light" href="#mecenazgo">Participar como mecenas</a>
+      </div>
+
+      <div class="cta-final__share">
+        <a class="share-btn" href="https://www.instagram.com/endemicacrea" target="_blank" rel="noopener">Instagram</a>
+        <a class="share-btn" href="https://wa.me/?text=Ayuda%20a%20Ende%CC%81mica%20Crea%20a%20llegar%20a%20Re%CC%81ve%CC%81lations%202027%20en%20el%20Grand%20Palais%20de%20Pari%CC%81s" target="_blank" rel="noopener">WhatsApp</a>
+        <button type="button" class="share-btn" data-copy-link>Copiar link</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <p class="footer__brand">Endémica Crea · <a id="footer-instagram" href="https://www.instagram.com/endemicacrea" target="_blank" rel="noopener">@endemicacrea</a></p>
+    <p class="footer__contact">Contacto: <a id="footer-email" href="mailto:hola@endemicacrea.cl">hola@endemicacrea.cl</a></p>
+    <p class="footer__bienal"><a id="footer-bienal" href="https://www.revelations-grandpalais.com" target="_blank" rel="noopener">Révélations — Grand Palais, París</a></p>
+  </div>
+</footer>
+
+<script src="config/campaign.config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
