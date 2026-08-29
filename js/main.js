@@ -175,7 +175,8 @@ function copyToClipboard(text, btn) {
 function setupFooterLinks(config) {
   var email = document.getElementById('footer-email');
   var instagram = document.getElementById('footer-instagram');
-  var bienal = document.getElementById('footer-bienal');
+  var footerBienal = document.getElementById('footer-bienal');
+  var bienalLink = document.getElementById('bienal-link');
 
   if (email && config.contactEmail) {
     email.textContent = config.contactEmail;
@@ -185,7 +186,8 @@ function setupFooterLinks(config) {
     instagram.textContent = config.instagramHandle;
     if (config.instagramUrl) instagram.setAttribute('href', config.instagramUrl);
   }
-  if (bienal && config.bienalUrl) {
-    bienal.setAttribute('href', config.bienalUrl);
+  if (config.bienalUrl) {
+    if (footerBienal) footerBienal.setAttribute('href', config.bienalUrl);
+    if (bienalLink) bienalLink.setAttribute('href', config.bienalUrl);
   }
 }
