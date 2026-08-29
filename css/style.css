@@ -637,10 +637,13 @@ ol {
   color: var(--color-carbon-soft);
 }
 
-/* ---- Productos: piezas de la colección (fondo negro, fotos de producto) ---- */
+/* ---- Productos: piezas de la colección ----
+   Fotos recortadas (sin fondo) para que floten sobre el fondo claro de
+   la página, en vez de la caja negra usada en el resto de las fotos de
+   producto. */
 .productos {
-  background: var(--color-black);
-  color: var(--color-white);
+  background: var(--color-offwhite);
+  color: var(--color-carbon);
 }
 
 .productos__title {
@@ -663,7 +666,7 @@ ol {
   font-style: italic;
   font-size: clamp(1.05rem, 1.6vw, 1.25rem);
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--color-carbon-soft);
 }
 
 .piece-list {
@@ -681,14 +684,15 @@ ol {
 }
 
 .piece-row__media {
-  aspect-ratio: 4 / 3;
-  overflow: hidden;
+  display: flex;
 }
 
 .piece-row__media img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-width: 420px;
+  height: auto;
+  margin: 0 auto;
+  filter: drop-shadow(0 24px 32px rgba(28, 33, 34, 0.18));
 }
 
 .piece-row__index {
@@ -714,7 +718,7 @@ ol {
 .piece__desc {
   margin-top: 16px;
   max-width: 42ch;
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--color-carbon-soft);
 }
 
 @media (min-width: 760px) {
